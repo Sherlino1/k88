@@ -27,5 +27,5 @@ spec:
     spec:
       containers:
         - name: hello
-          image: ssherlin015/k8s:latest
+          image: ssherlin015/kub8:latest
           imagePullPolicy: Always
