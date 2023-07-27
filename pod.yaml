@@ -14,7 +14,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kub8
+  name: loadbalancer-pod
 spec:
   replicas: 3
   selector:
@@ -29,3 +29,6 @@ spec:
         - name: hello
           image: ssherlin015/kub8:latest
           imagePullPolicy: Always
+    ports:
+    - containerPort: 8080
+      hostPort: 8080
