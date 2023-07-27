@@ -29,6 +29,3 @@ spec:
         - name: hello
           image: ssherlin015/kub8:latest
           imagePullPolicy: Always
-    ports:
-    - containerPort: 8080
-      hostPort: 8080
